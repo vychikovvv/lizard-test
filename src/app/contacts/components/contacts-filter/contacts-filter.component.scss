@@ -7,16 +7,98 @@
   border-radius: 72px;
   &-form {
     display: flex;
+    justify-content: space-between;
     &__container {
       display: flex;
-      width: 21.88vw;
-      padding: 0.36vw 0.73vw 0.31vw 0.83vw;
+      &:first-of-type {
+        width: 21.88vw;
+        padding: 0.36vw 0.73vw 0.31vw 0.83vw;
+        font-style: italic;
+        border-right: 0.704545px solid #6e767d;
+      }
+      &:nth-child(2) {
+        display: flex;
+        align-items: center;
+      }
     }
     &__select {
       appearance: none;
       width: 20.26vw;
       background-image: url("../../../../assets/images/orange-arrow-down.svg");
       background-repeat: no-repeat;
+      background-size: auto;
+      background-position: right;
+      font-size: 12px;
+      line-height: 14px;
+      height: 15px;
+    }
+    &__input {
+      font-size: 12px;
+      line-height: 14px;
+      height: 15px;
+      width: 41.3vw;
+      padding: 0.36vw 0 0.31vw 0.42vw;
+    }
+    &__btn {
+      @include flex-c-c;
+      margin: 0px 0.47vw 0px 0px;
+      cursor: pointer;
     }
   }
+}
+.contacts-toggle {
+  display: flex;
+  width: 33.23vw;
+  margin: 0.63vw 0px 0px 4.84vw;
+  &-container__toggle {
+    &_input {
+      position: relative;
+      z-index: -1;
+      opacity: 0;
+      margin: 0;
+      top: 6px;
+      left: -1px;
+      width: 22px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+}
+.contacts-toggle-container__toggle_input
+  + .contacts-toggle-container__toggle_control {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+.contacts-toggle-container__toggle_input
+  + .contacts-toggle-container__toggle_control::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  right: -8px;
+  cursor: pointer;
+}
+.contacts-toggle-container__toggle_input
+  + .contacts-toggle-container__toggle_control::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  left: -17px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.contacts-toggle-container__toggle_input:checked
+  + .contacts-toggle-container__toggle_control::after {
+  left: -5px;
 }
