@@ -1,0 +1,12 @@
+@import "../../../../styles.scss";
+.contacts-header {
+  text-align: center;
+  margin: 0px 1.25vw 0px 1.25vw;
+  padding: 1.25vw 0px 1.25vw 0px;
+  border-bottom: 3px solid $colorGrey;
+  &__text {
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(40, 43, 46, 1);
+  }
+}

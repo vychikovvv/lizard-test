@@ -1,0 +1,22 @@
+@import "../../../../styles.scss";
+.contacts-filter {
+  width: 65.16vw;
+  margin: 2.14vw 2.66vw 0px 4.84vw;
+  border: 0.704545px solid #6e767d;
+  box-shadow: 0px 2.81818px 14.7955px rgba(0, 0, 0, 0.07);
+  border-radius: 72px;
+  &-form {
+    display: flex;
+    &__container {
+      display: flex;
+      width: 21.88vw;
+      padding: 0.36vw 0.73vw 0.31vw 0.83vw;
+    }
+    &__select {
+      appearance: none;
+      width: 20.26vw;
+      background-image: url("../../../../assets/images/orange-arrow-down.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
