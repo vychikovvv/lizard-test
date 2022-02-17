@@ -1,9 +1,12 @@
 @import "../../../../styles.scss";
 .contact-card {
   display: flex;
+  width: 343px;
+  height: 125px;
   &__image {
     width: 67px;
     height: 67px;
+    margin: 3px 0px 0px 0px;
   }
   &__content {
     margin: 0px 0px 0px 28px;
@@ -11,11 +14,11 @@
   &__header {
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.27px;
     color: $colorBlackCard;
   }
   &__container {
-    margin: 10px 0px 0px 0px;
+    margin: 8px 0px 0px 0px;
   }
   &__organization,
   &__department,
@@ -23,10 +26,11 @@
     font-size: 14px;
     line-height: 16px;
     color: rgba(166, 170, 173, 1);
+    letter-spacing: -1.2px;
   }
   &__department,
   &__position {
-    margin: 5px 0px 0px 0px;
+    margin: 4px 0px 0px 0px;
   }
   &__phone {
     margin: 10px 0px 0px 0px;
@@ -36,5 +40,8 @@
     font-size: 12px;
     line-height: 14px;
     color: rgba(33, 33, 33, 1);
+  }
+  &__email {
+    margin: 0px 0px 0px 4px;
   }
 }

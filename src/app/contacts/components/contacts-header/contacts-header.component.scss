@@ -5,6 +5,9 @@
   padding: 1.25vw 0px 1.25vw 0px;
   border-bottom: 3px solid $colorGrey;
   &__text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px 0px 0px -3px;
     font-size: 22px;
     line-height: 26px;
     color: rgba(40, 43, 46, 1);
