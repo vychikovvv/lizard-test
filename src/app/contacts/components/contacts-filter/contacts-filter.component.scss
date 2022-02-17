@@ -25,6 +25,7 @@
     }
     &__select {
       appearance: none;
+      cursor: pointer;
       width: 20.5vw;
       background-image: url("../../../../assets/images/orange-arrow-down.svg");
       background-repeat: no-repeat;
@@ -35,6 +36,7 @@
       height: 15px;
     }
     &__input {
+      cursor: pointer;
       width: 100%;
       font-size: 12px;
       line-height: 14px;

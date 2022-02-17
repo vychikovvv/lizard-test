@@ -31,6 +31,11 @@
       font-size: 14px;
       padding: 1px 0px 0px 0px;
       color: rgba(110, 118, 125, 1);
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid $colorPurple;
+      }
       &_active {
         color: $colorPurple;
         border: 1px solid $colorPurple;
