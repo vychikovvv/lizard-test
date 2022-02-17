@@ -38,3 +38,34 @@
     }
   }
 }
+
+@include _1670 {
+  .contacts-cards {
+    grid-template-columns: repeat(2, 343px);
+  }
+}
+@include _1440 {
+  .contacts-cards {
+    gap: 15px 30px;
+  }
+  .contacts-filter-form__container {
+    padding: 6px 6px 6px 12px;
+  }
+}
+@include _1024 {
+  .contacts-cards {
+    grid-template-columns: repeat(1, 343px);
+    margin: 26px 20px 0 20px;
+  }
+}
+@include _600 {
+  .contacts-container {
+    margin: 0px 20px 0px 20px;
+  }
+}
+@include _400 {
+  .contacts-cards {
+    grid-template-columns: repeat(1, 220px);
+    gap: 30px 0px;
+  }
+}

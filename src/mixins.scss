@@ -1,5 +1,10 @@
 /* screen width for media queries*/
 
+@mixin _1670 {
+  @media (max-width: 1670px) {
+    @content;
+  }
+}
 @mixin _1440 {
   @media (max-width: 1440px) {
     @content;
@@ -22,6 +27,11 @@
   }
 }
 
+@mixin _400 {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
 @mixin _375 {
   @media (max-width: 375px) {
     @content;

@@ -20,6 +20,7 @@
         width: 43.28vw;
         display: flex;
         align-items: center;
+        justify-content: space-between;
       }
     }
     &__select {
@@ -34,16 +35,16 @@
       height: 15px;
     }
     &__input {
+      width: 100%;
       font-size: 12px;
       line-height: 14px;
       height: 15px;
-      width: 41.3vw;
       padding: 5px 0 6px 8px;
       letter-spacing: -0.2px;
     }
     &__btn {
       @include flex-c-c;
-      margin: 4px 0px 0px 7px;
+      margin: 4px 9px 0px 0px;
       cursor: pointer;
     }
   }
@@ -118,4 +119,88 @@
 .contacts-toggle-container__toggle_input:checked
   + .contacts-toggle-container__toggle_control::after {
   left: -5px;
+}
+@include _1440 {
+  .contacts-filter-form__container {
+    &:first-of-type {
+      padding: 6px 6px 6px 12px;
+    }
+  }
+}
+@include _1024 {
+  .contacts-toggle {
+    display: block;
+  }
+  .contacts-toggle-container + .contacts-toggle-container {
+    margin: 0px 0px 0px 0px;
+  }
+  .contacts-filter {
+    margin: 0 20px;
+  }
+  .contacts-toggle {
+    margin: 0 20px;
+  }
+}
+@include _768 {
+  .contacts-filter {
+    border: none;
+    box-shadow: none;
+    &-form {
+      display: block;
+      &__container {
+        &:first-of-type {
+          min-width: 150px;
+          padding: 10px 10px 10px 10px;
+          border: none;
+          font-style: normal;
+          border: 1px solid $grey;
+          border-radius: 5px;
+          color: $grey1;
+        }
+        &:nth-of-type(2) {
+          min-width: 320px;
+          margin: 10px 0px 0px 0px;
+          padding: 10px 10px 10px 10px;
+          border: none;
+          font-style: normal;
+          border: 1px solid $grey;
+          border-radius: 5px;
+          color: $grey1;
+        }
+      }
+      &__select {
+        height: 22px;
+        min-width: 130px;
+      }
+      &__input {
+        min-width: 268px;
+        height: 22px;
+        padding: 0px 0px 0px 0px;
+      }
+    }
+  }
+}
+@include _400 {
+  .contacts-filter-form {
+    &__container {
+      &:nth-of-type(2) {
+        min-width: 240px;
+        padding: 10px 0px 10px 10px;
+      }
+    }
+    &__select {
+      min-width: 130px;
+      font-size: 9px;
+    }
+    &__input {
+      min-width: 200px;
+      font-size: 9px;
+    }
+  }
+  .contacts-toggle-container {
+    width: auto;
+  }
+  .contacts-toggle-container__text {
+    font-size: 12px;
+  }
 }
