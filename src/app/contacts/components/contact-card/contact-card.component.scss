@@ -1,0 +1,40 @@
+@import "../../../../styles.scss";
+.contact-card {
+  display: flex;
+  &__image {
+    width: 67px;
+    height: 67px;
+  }
+  &__content {
+    margin: 0px 0px 0px 28px;
+  }
+  &__header {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: $colorBlackCard;
+  }
+  &__container {
+    margin: 10px 0px 0px 0px;
+  }
+  &__organization,
+  &__department,
+  &__position {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(166, 170, 173, 1);
+  }
+  &__department,
+  &__position {
+    margin: 5px 0px 0px 0px;
+  }
+  &__phone {
+    margin: 10px 0px 0px 0px;
+  }
+  &__phone,
+  &__email {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(33, 33, 33, 1);
+  }
+}

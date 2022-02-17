@@ -1,3 +1,9 @@
 .contacts-container {
   margin: 0px 13.8vw 0px 13.54vw;
 }
+.contacts-cards {
+  margin: 28px 2.66vw 0px 4.84vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 60px;
+}

@@ -17,6 +17,7 @@
         border-right: 0.704545px solid #6e767d;
       }
       &:nth-child(2) {
+        width: 43.28vw;
         display: flex;
         align-items: center;
       }
@@ -41,15 +42,26 @@
     }
     &__btn {
       @include flex-c-c;
-      margin: 0px 0.47vw 0px 0px;
+      margin: 0px 9px 0px 0px;
       cursor: pointer;
     }
   }
 }
 .contacts-toggle {
   display: flex;
-  width: 33.23vw;
   margin: 0.63vw 0px 0px 4.84vw;
+  &-container {
+    display: flex;
+    align-items: center;
+    width: 292px;
+    &__text {
+      font-size: 16px;
+      line-height: 18.75px;
+      letter-spacing: 0.15px;
+      margin: 14px 0px 0px 16px;
+      color: $grey;
+    }
+  }
   &-container__toggle {
     &_input {
       position: relative;
@@ -79,7 +91,7 @@
   width: 22px;
   height: 10px;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: $grey;
   right: -8px;
   cursor: pointer;
 }
